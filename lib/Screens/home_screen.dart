@@ -50,6 +50,17 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Container(
+              margin: const EdgeInsets.only(top: 30,bottom: 30),
+              height: 200,
+              width: 200,
+              decoration: const BoxDecoration(
+                color: Colors.black,
+                shape: BoxShape.circle,
+                image: DecorationImage(
+                  image: AssetImage('assets/images/logo.png'),fit: BoxFit.fill,),
+              ),
+            ),
             Text(
               currentTime,
               style: const TextStyle(fontSize: 50),

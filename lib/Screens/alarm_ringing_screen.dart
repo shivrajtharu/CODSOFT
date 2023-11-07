@@ -13,6 +13,17 @@ class AlarmRingingScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Container(
+              margin: const EdgeInsets.only(top: 30,bottom: 30),
+              height: 200,
+              width: 200,
+              decoration: const BoxDecoration(
+              color: Colors.black,
+              shape: BoxShape.circle,
+              image: DecorationImage(
+              image: AssetImage('assets/images/img.png'),fit: BoxFit.fill,),
+              ),
+            ),
             const Text(
               'Time to wake up!',
               style: TextStyle(fontSize: 24),
